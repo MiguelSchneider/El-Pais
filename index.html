@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>miguel</title>
+		<link rel="stylesheet" href="style/style.css">
+		<script defer src="js/importer.js"></script>
+	</head>
+	<body role="application">
+		<!--
+		Main View
+		-->
+		<section id='portada' role="region" class='container'>
+			<header>
+				<img src="images/elpais.png">
+				<h2 id="portadaTitle">Portada</h2>
+				<h3 id="pubDate">pubDate</h3>
+			</header>
+			<section data-type="list">
+				<header></header>
+				<ul id="lista"></ul>
+			</section>
+		</section>
+		<!--
+		Article View
+		-->
+		<section id='article' role="region" class='container hide skin-dark'>
+			<header>
+				<div id="articleHeader">
+					<a id='backArticle'><img src="images/close.png" /></a>
+				</div>
+				<h1 id='articleTitle'>Aqui va el título de la noticia</h1>
+			</header>
+			<div id='articleContent' >
+				Y aquí el contenido
+			</div>
+		</section>
+		<!--
+		Footer & Action Icons
+		-->
+		<section id="footer" class='footer'>
+			<span class="reloadButton"> <img id='reloadButton' src="images/reload.png"> </span>
+			<span class="menuButton"> <img id='menuButton' src="images/menu.png"> </span>
+		</section>
+		<!--
+		Crapy Catergories pop up
+		-->
+		<div id='sections' class="hide">
+			<p>
+				Secciones
+			</p>
+			<div id='portadaElPais' class='sectionItem'>
+				Portada
+			</div>
+			<div id='deportes' class='sectionItem'>
+				Deportes
+			</div>
+			<div id='internacional' class='sectionItem'>
+				Internacional
+			</div>
+		</div>
+		<div id='info' class="hidden">
+			Cargando Contenidos
+		</div>
+	</body>
+</html>
